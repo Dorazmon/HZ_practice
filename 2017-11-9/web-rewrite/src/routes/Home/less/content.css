@@ -1,0 +1,38 @@
+.content-template-wrapper {
+  width: 100%;
+  background: #fff;
+  height: 100vh;
+  border-color: #666;
+  position: relative;
+}
+.content-template-wrapper .content-template {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+}
+.content-template-wrapper .content-template > p {
+  font-size: 12px;
+  margin: 12px auto;
+  font-family: Arial;
+}
+.content-half-wrapper {
+  height: 50vh;
+}
+@media screen and (max-width: 767px) {
+  .content-template-wrapper .content-template {
+    /*h1, > p {
+        text-align: center;
+      }*/
+  }
+  .content-template-wrapper .content-template h1 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .content-template-wrapper .content-template > p {
+    font-size: 18px;
+    margin: 16px auto;
+    font-family: Arial;
+  }
+}

@@ -1,0 +1,495 @@
+.web {
+  position: relative;
+  margin-top: -17px;
+}
+.web .banner {
+  position: relative;
+  background: url(/static/services/web-banner.png) no-repeat;
+  height: 509.78px;
+  background-size: 100% 100%;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.web .banner h1 {
+  color: white;
+  position: relative;
+  font-family: "微软雅黑";
+  Top: 198.8px;
+  font-size: 46.86px;
+}
+.web .banner .sdl {
+  position: relative;
+  top: -55px;
+}
+.web .banner .sdl h1 {
+  font-size: 70px;
+}
+.web .Myservice {
+  width: 100%;
+  margin: 50px auto 50px;
+  height: 400px;
+}
+.web .Myservice .Myservice_All {
+  position: relative;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.web .Myservice .Myservice_All .Myservice_logo {
+  width: 50%;
+  text-align: center;
+}
+.web .Myservice .Myservice_All .Myservice_Content {
+  position: relative;
+  width: 50%;
+}
+.web .Myservice .Myservice_All .Myservice_Content h1 {
+  font-family: "微软雅黑";
+  font-size: 42px;
+  color: #80c5e2;
+  text-align: center;
+}
+.web .Myservice .Myservice_All .Myservice_Content h2 {
+  text-align: center;
+  color: #80c5e2;
+  position: relative;
+  top: -5px;
+}
+.web .Myservice .Myservice_All .Myservice_Content p {
+  font-family: "微软雅黑";
+  font-size: 20px;
+  color: #605f5f;
+  width: 80%;
+  margin: 0 auto;
+  text-indent: 2em;
+  text-align: justify;
+}
+.web .mainTest {
+  width: 100%;
+  position: relative;
+}
+.web .mainTest .mainTest_ALL {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.web .mainTest .mainTest_ALL h2 {
+  text-align: center;
+  color: #80c5e2;
+  position: relative;
+  top: -5px;
+}
+.web .mainTest .mainTest_ALL .mainTest_content {
+  width: 75%;
+  text-align: center;
+}
+.web .mainTest .mainTest_ALL .mainTest_content h1 {
+  font-family: "微软雅黑";
+  font-size: 42px;
+  color: #80c5e2;
+}
+.web .mainTest .mainTest_ALL .mainTest_content .testContent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+.web .mainTest .mainTest_ALL .mainTest_content .testContent li {
+  font-family: "微软雅黑";
+  text-align: left;
+  width: 33.33%;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.web .mainTest .mainTest_ALL .mainTest_logo {
+  width: 25%;
+  text-align: center;
+}
+.web .mainTest .mainTest_ALL .mainTest_content_app {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+.web .mainTest .mainTest_ALL .mainTest_content_app h1 {
+  font-family: "微软雅黑";
+  font-size: 42px;
+  color: #80c5e2;
+}
+.web .mainTest .mainTest_ALL .mainTest_content_app .testContent_app {
+  position: relative;
+  left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px auto;
+  list-style: disc;
+  justify-content: center;
+}
+.web .mainTest .mainTest_ALL .mainTest_content_app .testContent_app li {
+  font-family: "微软雅黑";
+  text-align: left;
+  margin: 0 10px;
+  width: 30%;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.web .foot {
+  position: relative;
+  background: url(/static/services/web-2.png) no-repeat;
+  height: 300px;
+  background-size: 100% 100%;
+  margin-top: 100px;
+}
+.web .foot .foot_All {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.web .foot .foot_All .foot_one {
+  display: flex;
+  width: 100%;
+}
+.web .foot .foot_All .foot_one h1 {
+  width: 25%;
+  font-family: "微软雅黑";
+  font-size: 42px;
+  color: white;
+  text-align: center;
+}
+.web .foot .foot_All .foot_two {
+  display: flex;
+  width: 100%;
+}
+.web .foot .foot_All .foot_two h1 {
+  width: 25%;
+  font-family: "微软雅黑";
+  font-size: 60px;
+  color: #80c5e2;
+  font-family: "Arial";
+  text-align: center;
+}
+.web .sdl_content {
+  width: 1200px;
+  position: relative;
+  margin: 0px auto 116px;
+  text-align: center;
+  font-family: "微软雅黑";
+  height: 1500px;
+  background: url(/static/services/sdl1.png) no-repeat;
+  background-position: center 110px;
+}
+.web .sdl_content h1 {
+  font-size: 44px;
+}
+.web .sdl_content img {
+  position: relative;
+}
+.web .sdl_content .sdl_text {
+  width: 971px;
+  margin: 0 auto;
+  display: flex;
+  font-size: 34px;
+  text-align: left;
+}
+.web .sdl_content .sdl_text .sdl_text1 {
+  width: 50%;
+}
+.web .sdl_content .sdl_text .sdl_text1 ul {
+  list-style: disc;
+}
+.web .sdl_content .sdl_text .sdl_text1 li {
+  width: 220px;
+  margin: 0 auto 20px;
+  color: black;
+}
+.web .sdl_content .sdl_text .sdl_text1 .sdl_text1_1 {
+  position: relative;
+  top: 500px;
+  left: 50px;
+}
+.web .sdl_content .sdl_text .sdl_text1 .sdl_text1_2 {
+  position: relative;
+  top: 650px;
+  left: 50px;
+}
+.web .sdl_content .sdl_text .sdl_text2 {
+  width: 50%;
+}
+.web .sdl_content .sdl_text .sdl_text2 ul {
+  list-style: disc;
+}
+.web .sdl_content .sdl_text .sdl_text2 li {
+  margin: 0 auto 20px;
+  color: black;
+}
+.web .sdl_content .sdl_text .sdl_text2 .sdl_text2_1 {
+  position: relative;
+  top: 350px;
+  left: 120px;
+}
+.web .sdl_content .sdl_text .sdl_text2 .sdl_text2_2 {
+  position: relative;
+  top: 640px;
+  left: 120px;
+}
+.web .sdl_content .sdl_text .sdl_text2 .sdl_text2_3 {
+  position: relative;
+  top: 880px;
+  left: 120px;
+}
+#safetyAssessment {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+#safetyAssessment img {
+  width: 80%;
+}
+.mainContent {
+  margin: 50px auto;
+  width: 1200px;
+  display: flex;
+}
+.mainContent .assessContent {
+  width: 40%;
+  margin: 0 100px;
+  height: 100%;
+}
+.mainContent .assessContent h1 {
+  font-size: 42px;
+  font-family: "微软雅黑";
+  color: #80c5e2;
+  text-align: center;
+}
+.mainContent .assessContent h2 {
+  position: relative;
+  top: -5px;
+  text-align: center;
+  font-family: "微软雅黑";
+  color: #80c5e2;
+}
+.mainContent .assessContent p {
+  font-family: "微软雅黑";
+  font-size: 20px;
+  text-indent: 2em;
+  line-height: 38px;
+}
+.mainContent .safety_assessment {
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+}
+.mainContent .safety_assessment h1 {
+  text-align: center;
+  font-size: 42px;
+  font-family: "微软雅黑";
+  color: #80c5e2;
+}
+.mainContent .safety_assessment h2 {
+  position: relative;
+  top: -5px;
+  text-align: center;
+  font-family: "微软雅黑";
+  color: #80c5e2;
+}
+.mainContent .safety_assessment h3 {
+  font-size: 30px;
+  font-family: "微软雅黑";
+  color: #80c5e2;
+}
+.mainContent .safety_assessment p {
+  font-family: "微软雅黑";
+  font-size: 20px;
+  text-indent: 2em;
+  line-height: 38px;
+}
+.mainContent .safety_assessment .safety_text {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainContent .safety_assessment .safety_text .safety_text1 {
+  width: 50%;
+  margin: 20px 0px;
+}
+.mainContent .safety_assessment .safety_text .safety_text1 p {
+  width: 90%;
+}
+.mainContent .safety_assessment .safety_text .safety_text2 {
+  width: 50%;
+  align-self: flex-end;
+  margin: 20px 0px;
+  padding-left: 30px;
+}
+.mainContent .safety_assessment .safety_text .safety_text2 p {
+  width: 90%;
+}
+.mainContent .safety_assessment .safety_text .safety_text3 {
+  width: 50%;
+  margin: 20px 0px;
+}
+.mainContent .safety_assessment .safety_text .safety_text3 p {
+  width: 90%;
+}
+.mainContent .safety_assessment .safety_text .safety_img1 {
+  width: 50%;
+  text-align: center;
+}
+.mainContent .safety_assessment .safety_text .safety_img1 img {
+  height: 300px;
+}
+.mainContent .safety_assessment .safety_text .safety_img2 {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.mainContent .safety_assessment .safety_text .safety_img2 img {
+  height: 250px;
+}
+.mainContent .app-security {
+  width: 100%;
+  margin: 50px 0px ;
+}
+.mainContent .app-security h1 {
+  position: relative;
+  text-align: center;
+  font-size: 38px;
+  color: #108ee9;
+}
+.mainContent .app-security h2 {
+  position: relative;
+  top: -15px;
+}
+.mainContent .app-security .app_security_strong {
+  position: relative;
+  margin: 50px auto;
+  line-height: 30px;
+  list-style: none;
+}
+.mainContent .app-security .app_security_strong li {
+  font-size: 22px;
+  width: 500px;
+  color: black;
+  margin: 20px auto;
+}
+.mainContent .app-security .app_security_strong li p {
+  text-indent: 0;
+  color: #464646;
+  font-size: 18px;
+  text-align: left;
+  line-height: 30px;
+}
+.mainContent .app-security .app_security_component {
+  position: relative;
+  margin: 50px auto;
+  line-height: 40px;
+  list-style: none;
+}
+.mainContent .app-security .app_security_component li {
+  width: 900px;
+  font-size: 24px;
+  color: black;
+  margin: 10px auto;
+}
+.mainContent .app-security .app_security_component li p {
+  text-indent: 0;
+  color: #464646;
+  font-size: 18px;
+  text-align: left;
+}
+.mainContent .app-security .app_security_component li .app_security_component_text {
+  position: relative;
+  left: -30px;
+}
+#test_picture {
+  width: 50%;
+  margin: 50px -120px;
+  position: relative;
+  z-index: -1;
+}
+#test_picture div {
+  margin: 0 auto;
+  width: 369.2px;
+}
+#test_picture div img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+#nonFinancial {
+  margin: 0 auto;
+  width: 1200px;
+  text-align: center;
+}
+#nonFinancial h1 {
+  font-size: 42px;
+  margin-bottom: 50px;
+  font-family: "微软雅黑";
+  color: #80c5e2;
+}
+#nonFinancial img {
+  width: 80%;
+  margin-top: -5px;
+}
+@media screen and (min-width: 1600px) {
+  .web .banner {
+    height: 718px;
+  }
+  .web .banner h1 {
+    Top: 280px;
+    font-size: 66px;
+  }
+  .web #sdl_banner {
+    height: 602px;
+  }
+  .mainContent .app-security .app_security_strong {
+    position: relative;
+    margin: 50px auto;
+    line-height: 40px;
+    list-style: none;
+  }
+  .mainContent .app-security .app_security_strong li {
+    font-size: 24px;
+    width: 650px;
+    color: black;
+    margin: 10px auto;
+  }
+  .mainContent .app-security .app_security_strong li p {
+    text-indent: 0;
+    color: #464646;
+    font-size: 18px;
+    text-align: left;
+  }
+  .mainContent .app-security .app_security_component {
+    position: relative;
+    margin: 50px auto;
+    line-height: 40px;
+    list-style: none;
+  }
+  .mainContent .app-security .app_security_component li {
+    width: 900px;
+    font-size: 24px;
+    color: black;
+    margin: 10px auto;
+  }
+  .mainContent .app-security .app_security_component li p {
+    text-indent: 0;
+    color: #464646;
+    font-size: 18px;
+    text-align: left;
+  }
+  .mainContent .app-security .app_security_component li .app_security_component_text {
+    position: relative;
+    left: -30px;
+  }
+}

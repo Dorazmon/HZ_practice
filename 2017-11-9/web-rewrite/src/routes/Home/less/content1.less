@@ -1,0 +1,262 @@
+@import './custom.less';
+
+@banner1: banner1;
+.@{banner1} {
+  width: 100%;
+  // 如果在第一屏且导航位置为 relative, 一屏为 height: calc(~"100vh - 64px");
+  height: 100vh;
+  position: relative;
+  border-color: #666;
+  background: #fff;
+  &-wrapper, .banner-anim {
+    height: 100%;
+  }
+  & .queue-anim-leaving {
+    position: relative !important;
+    width: auto;
+  }
+  .banner-user-elem {
+    height: 100%;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  // .bg0{
+  //   background: url("/static/img/banner0_1.jpg") center;
+  // }
+  .bg0 {
+    background: url("/static/img/banner1.jpg") center;
+    
+  }
+  .bg1{
+    background: url("/static/img/banner2.jpg") center;
+  }
+  .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-size: cover;
+  }
+  .banner-user-elem .banner-user-title {
+    font-size: 22px;
+    top: 40%;
+  }
+  .banner-user-elem .banner-user-text {
+    top: 40%;
+  }
+  &-title {
+    display: block;
+    position: relative;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 14px;
+    color: @template-text-color-light;
+    width: 550px;
+    text-align: center;
+    & .logo {
+      width: 350px;
+      left: 30px;
+      margin: auto;
+      display: inline-block;
+      position: relative;
+    }
+    & p {
+      margin-bottom: 20px;
+      word-wrap: break-word;
+    }
+    
+  }
+  &-icon {
+    bottom: 20px;
+    font-size: 24px;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    margin-left: -12px;
+    color: @template-text-color-light;
+  }
+  #content_2_0-wrapperBlock0{
+    button {
+      position: relative;
+      top:400px;
+      left: 500px;
+      border: 1px solid #fff;
+      color: #fff;
+      background: transparent;
+      box-shadow: 0 0 0 transparent;
+      transition: background .45s @ease-out, box-shadow .45s @ease-out;
+      line-height: 40px;
+      border-radius:10px;
+      font-size: 36px;//18px
+      font-family: 	'	Microsoft JhengHei';
+      height: 78px;//40px;
+      width:237px;
+      
+      margin: 85px auto;//30px;
+      & span {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        transition: text-shadow .45s @ease-out;
+      }
+      &:hover {
+        color: #fff;
+        border-color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 10px rgba(50, 250, 255, 0.75);
+        & span {
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, .35);
+        }
+      }
+    }
+  }
+  #content_2_0-wrapperBlock1{
+    button {
+      position: relative;
+      top:380px;
+      left: 450px;
+      border: 1px solid #fff;
+      color: #fff;
+      background: transparent;
+      box-shadow: 0 0 0 transparent;
+      transition: background .45s @ease-out, box-shadow .45s @ease-out;
+      line-height: 40px;
+      border-radius:10px;
+      font-size: 36px;//18px
+      font-family: 	'	Microsoft JhengHei';
+      height: 78px;//40px;
+      width:237px;
+      
+      margin: 85px auto;//30px;
+      & span {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        transition: text-shadow .45s @ease-out;
+      }
+      &:hover {
+        color: #fff;
+        border-color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 10px rgba(50, 250, 255, 0.75);
+        & span {
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, .35);
+        }
+      }
+    }
+  }
+  .tcsec_video{
+    position: relative;
+    top:41vh;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    //left:-45px;
+    video{
+      margin: 0 auto;
+      width:38%;
+      //height:430px;
+    }
+  }
+}
+
+.banner-anim-thumb-default span {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .5);
+}
+
+@media screen and (max-width: 414px) {
+  .@{banner1}{
+    &-title{
+      width: 90%;
+      .logo{
+        width: 90%;
+        left: 0;
+      }
+    }
+    .bg {
+      background-attachment: inherit;
+    }
+  }
+}
+
+@media screen and (max-width:1366px){
+  .@{banner1} {
+  #content_2_0-wrapperBlock1{
+    button {
+      position: relative;
+      top:280px;
+      left: 330px;
+      border: 1px solid #fff;
+      color: #fff;
+      background: transparent;
+      box-shadow: 0 0 0 transparent;
+      transition: background .45s @ease-out, box-shadow .45s @ease-out;
+      line-height: 40px*0.8;
+      font-size: 36px*0.8;//18px
+      font-family: 	'	Microsoft JhengHei';
+      height: 78px*0.8;//40px;
+      width:237px*0.8;
+      right:10%;
+      margin: 85px*0.8;//30px;
+      & span {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        transition: text-shadow .45s @ease-out;
+      }
+      &:hover {
+        color: #fff;
+        border-color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 10px rgba(50, 250, 255, 0.75);
+        & span {
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, .35);
+        }
+      }
+    }
+  }
+  #content_2_0-wrapperBlock2{
+    button {
+      position: relative;
+      top:230px;
+      left: 320px;
+      border: 1px solid #fff;
+      color: #fff;
+      background: transparent;
+      box-shadow: 0 0 0 transparent;
+      transition: background .45s @ease-out, box-shadow .45s @ease-out;
+      line-height: 40px*0.8;
+      font-size: 36px*0.8;//18px
+      font-family: 	'	Microsoft JhengHei';
+      height: 78px*0.8;//40px;
+      width:237px*0.8;
+      margin: 85px auto;//30px;
+      & span {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        transition: text-shadow .45s @ease-out;
+      }
+      &:hover {
+        color: #fff;
+        border-color: #fff;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 10px rgba(50, 250, 255, 0.75);
+        & span {
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, .35);
+        }
+      }
+    }
+  }
+  .tcsec_video{
+    position: relative;
+    top:41vh;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    
+  }
+  }
+}

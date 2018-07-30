@@ -1,0 +1,103 @@
+ExecuteCommand(){
+	if [ $1 = 'auth' ]; then
+		nohup java -Xms600M -Xmx600M -Xmn350M -jar /home/admin/tcsec/$1*.jar >/dev/null 2>&1 &
+		echo "start server:$1"
+	elif [ $1 = 'dockerwrapper' ]; then
+		nohup java -Xms600M -Xmx600M -Xmn350M -jar /home/admin/tcsec/$1*.jar >/dev/null 2>&1 &
+		echo "start server:$1"
+	elif [ $1 = 'notify' ]; then
+		nohup java -Xms256M -Xmx256M -Xmn130M -jar /home/admin/tcsec/$1*.jar >/dev/null 2>&1 &
+		echo "start server:$1"
+	elif [ $1 = 'user' ]; then
+		nohup java -Xms600M -Xmx600M -Xmn350M -jar /home/admin/tcsec/$1*.jar >/dev/null 2>&1 &
+		echo "start server:$1"
+	elif [ $1 = 'search' ]; then
+		nohup java -Xms600M -Xmx600M -Xmn350M -jar /home/admin/tcsec/$1*.jar >/dev/null 2>&1 &
+		echo "start server:$1"
+	elif [ $1 = 'registry' ]; then
+		nohup java -Xms256M -Xmx256M -Xmn130M -jar /home/admin/tcsec/$1*.jar >/dev/null 2>&1 &
+		echo "start server:$1"
+	elif [ $1 = 'config' ]; then
+		nohup java -Xms150M -Xmx150M -Xmn75M -jar /home/admin/tcsec/$1*.jar >/dev/null 2>&1 &
+		echo "start server:$1"
+	elif [ $1 = 'main' ]; then
+		nohup java -Xms600M -Xmx600M -Xmn350M -jar /home/admin/tcsec/$1*.jar >/dev/null 2>&1 &
+		echo "start server:$1"
+	fi
+	
+}
+
+printserver(){
+	if [ $# -eq 1 ]; then
+		ps -ef|grep "java -Xms"|grep "/home/admin/tcsec"|grep $1|awk '{printf "pid:[%7s] command:[%s %s %s %s %s %s]\n",$2,$8,$9,$10,$11,$12,$13}'
+	else
+		ps -ef|grep "java -Xms"|grep "/home/admin/tcsec"|awk '{printf "pid:[%7s] command:[%s %s %s %s %s %s]\n",$2,$8,$9,$10,$11,$12,$13}'
+	fi
+}
+
+getName(){
+	jarfile=`ls /home/admin/tcsec/*$1*`
+	jarname=`echo $jarfile|cut -d / -f 5|cut -d - -f 1`
+	echo $jarname
+}
+
+getpid(){
+	if [ $# -eq 1 ]; then
+		pids=`ps -ef|grep "java -Xms"|grep "/home/admin/tcsec"|grep $1|cut -b 10-15`
+	else
+		pids=`ps -ef|grep "java -Xms"|grep "/home/admin/tcsec"|cut -b 10-15`
+	fi
+	echo $pids
+}
+
+killserver(){
+	if [ $1 ]; then
+		kill -9 $1
+		echo "stop pid:$1"
+	fi
+}
+
+arr_string=("registry" "config" "main" "search" "user" "notify" "dockerwrapper" "auth");
+
+if [ $# -eq 1 ]; then
+	if [ $1 = '-ka' ]; then
+		for v in ${arr_string[@]}; do
+			pid=`getpid $2`
+			killserver $pid
+		done
+	elif [ $1 = '-ss' ]; then
+		for v in ${arr_string[@]:0:2}; do
+			ExecuteCommand $v
+		done
+		printserver
+	elif [ $1 = '-sc' ]; then
+		for v in ${arr_string[@]:2:6}; do
+			ExecuteCommand $v
+		done
+		printserver
+	else
+		name=`getName $1`
+		if [ $name ]; then
+			pid=`getpid $name`
+			killserver $pid	
+			ExecuteCommand $name
+			if [ $? -eq 0 ]; then
+				printserver $name
+			else
+				printserver $name
+			fi
+		else
+			echo "err input!"	
+		fi
+	fi
+elif [ $# -eq 2 ]; then
+	if [ $1 = '-k' ]; then
+		pid=`getpid $2`
+		killserver $pid
+	fi
+else
+	printserver
+fi
+
+
+

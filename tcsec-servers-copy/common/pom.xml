@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>common</artifactId>
+	<packaging>jar</packaging>
+
+	<name>common</name>
+
+	<parent>
+		<groupId>cn.com.tcsec.sdlmp</groupId>
+		<artifactId>tcsec-servers</artifactId>
+		<version>${project.version}</version>
+	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.github.briandilley.jsonrpc4j</groupId>
+			<artifactId>jsonrpc4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-activemq</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.itextpdf</groupId>
+			<artifactId>itext7-core</artifactId>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+		<groupId>org.jfree</groupId>
+		<artifactId>jfreechart</artifactId>
+		<version>1.0.19</version>
+		</dependency>
+	</dependencies>
+
+</project>
